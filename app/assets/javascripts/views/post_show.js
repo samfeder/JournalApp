@@ -16,6 +16,7 @@ Journal.Views.PostShow = Backbone.View.extend({
   },
 
   render: function(){
+
     var renderedContent = this.template({post: this.model});
 
     this.$el.html(renderedContent);

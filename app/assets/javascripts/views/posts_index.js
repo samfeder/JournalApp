@@ -3,10 +3,7 @@ Journal.Views.PostsIndex = Backbone.View.extend({
   template: JST["index"],
 
   initialize: function() {
-    this.superListen("remove",
-                     "add",
-                     "change:title",
-                     "reset");
+    this.superListen("all");
   },
 
   superListen: function() {

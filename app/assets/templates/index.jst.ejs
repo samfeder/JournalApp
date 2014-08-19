@@ -1,6 +1,6 @@
 <ul>
 <% posts.each(function (post) { %>
-  <li><%= post.get("title") %></li>
-  <button data-id="<%= post.get("id") %>" class="destroy">Delete Post</button>
+  <a href="#/posts/<%= post.id %>"><%= post.get("title") %></a><br>
+  <button data-id="<%= post.get("id") %>" class="destroy">Delete Post</button><br><br>
 <% });  %>
 </ul>
